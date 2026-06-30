@@ -40,14 +40,15 @@ Technologies:
 
 **Optional tasks**:
 
-1. Add logger (of your [choice](https://www.highlight.io/blog/nodejs-logging-libraries)). On each `request` you need to log: 
-   * incoming request: URL, method, date of invocation
-   * server response: URL, method, total time of processing the request, response HTTP code
+1. Add logger (of your [choice](https://www.highlight.io/blog/nodejs-logging-libraries)). On each `request` you need to log:
+   - incoming request: URL, method, date of invocation
+   - server response: URL, method, total time of processing the request, response HTTP code
 2. During server start-up:
-   * validate the environment variables. In case if something is missing - log error and terminate the node process.
-   * validate the database connection. In case if the server couldn't connect to the DB - log error and terminate the node process
+   - validate the environment variables. In case if something is missing - log error and terminate the node process.
+   - validate the database connection. In case if the server couldn't connect to the DB - log error and terminate the node process
 3. Implement [graceful shutdown](https://hackernoon.com/graceful-shutdown-in-nodejs-2f8f59d1c357)
 4. Configure the [pre-commit](https://dev.to/ajmaurya/set-up-eslint-prettier-and-pre-commit-hooks-using-husky-for-wordpress-from-scratch-1djk) hook to run [eslint](https://eslint.org/)
+5. Create Email Service (using [SendGrid](https://www.twilio.com/en-us/products/email-api) or similar service) and send an email to the user's email address after the bet is placed
 
 ### What will be evaluated:
 
