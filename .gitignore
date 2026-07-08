@@ -8,3 +8,4 @@ feedback/
 package-lock.json
 report.json
 result.json
+build/
